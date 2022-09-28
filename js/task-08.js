@@ -12,6 +12,11 @@ function handleSubmit(event) {
     return alert("Wszsytkie pola powinny być wypełnione!");
   }
 
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
+  const userData = {
+    email: email.value,
+    password: password.value,
+  };
+  console.log(userData);
+
   event.currentTarget.reset();
 }
